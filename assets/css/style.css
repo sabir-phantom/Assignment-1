@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "General", Sans; */
+  font-family: Nohemi;
+}
+
+@font-face {
+  font-family: Nohemi;
+  src: url(../fonts/nohemi-font-family-1703158914-0/Nohemi-SemiBold-BF6438cc588a48a.ttf);
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  color: var(--Grey, #4f4e55);
+  font-family: General Sans;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+  height: 50px;
+}
+
+.main-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.main-menu .menu-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+
+.menu-item,
+a {
+  color: black !important;
+  font-family: General Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-btn,
+button {
+  font-family: General Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.contact-us {
+  color: #ffffff !important;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  padding: 14px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.contact-us:hover {
+  transition: 300ms ease-in;
+}
