@@ -1,13 +1,13 @@
-// responsive navbar
 
-function responsiveNavbar() {
-    let navbar = document.getElementById("navbar");
-    
-    if (navbar.className === "navbar") {
-        navbar.className += " responsive";
+function age() {
+    let age = parseInt(document.getElementById('age').value);
+
+    if (age < 18) {
+        alert("You're a child");
     }
-    else {
-        navbar.className = "navbar";
+    else if (age >= 18 ) {
+        alert("You're an adult");
     }
-    console.log("object is " + navbar);
+
+    console.log("age: " + age);
 }

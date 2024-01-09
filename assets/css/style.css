@@ -387,7 +387,7 @@ ul{
 
 @media screen and (max-width:992px) {
   .menu-list .icon{
-    display: block;
+    display: block !important;
   }
   .contact-us {
     display: none;
