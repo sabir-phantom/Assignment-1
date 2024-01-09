@@ -42,17 +42,28 @@
         <div class="container">
             <div class="banner-container">
 
-                <div class="banner-text">
-                    <h1>Enter Your Age</h1>
+                <div class="banner-contents">
+                    <div class="banner-text">
+                        <h1>Enter Your Age</h1>
+                    </div>
+                    <div class="age-input">
+                        <!-- <label for="age">Enter your Age</label> -->
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div class="age-btn">
+                        <button id="ageBtn" onclick="age()">Calculate</button>
+                    </div>
                 </div>
-                <div class="age-input">
-                    <!-- <label for="age">Enter your Age</label> -->
-                    <input type="text" name="age" id="age">
+                
+                <div class="course" id="child-card">
+                    <img src="/assets/imgs/course-1.jpg" alt="" class="course-img">
+                    <button class="course-btn">You're a child</button>
                 </div>
-                <div class="age-btn">
-                    <button id="ageBtn" onclick="age()">Calculate</button>
+                <div class="course" id="adult-card">
+                    <img src="/assets/imgs/course-1.jpg" alt="" class="course-img">
+                    <button class="course-btn">You're an abult</button>
                 </div>
-    
+
             </div>
         </div>
     </section>
