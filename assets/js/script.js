@@ -14,9 +14,10 @@ function age() {
         adult.style.display = "block";
         child.style.display = "none";
     }
-    else if (age == 0) {
+    else if (age <= 0) {
         alert("Please enter a valid age");
     }
 
     console.log("age: " + age);
 }
+
