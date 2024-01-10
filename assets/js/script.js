@@ -21,6 +21,34 @@ function age() {
     console.log("age: " + age);
 }
 
+
+function Navbar() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        document.getElementById("nav-bar").style.display = "none";
+        console.log("object");
+    }
+    else {
+        document.getElementById("nav-bar").style.display = "block";
+    }
+}
+
+function responsiveNavbar() {
+    let navBar = document.getElementById("navbar");
+
+    if (navBar.style.display === "block" && ) {
+        navBar.style.display = "none";
+    }
+    else {
+        navBar.style.display = "block";
+    }
+}
+
+
+// const nav = document.querySelectorAll(".main-menu");
+//     console.log(nav);
+
+
+
 // multiplication table
 // function table1(){
 //     for(let i = 1; i <= 10; i++) {
