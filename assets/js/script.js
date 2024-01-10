@@ -34,8 +34,9 @@ function Navbar() {
 
 function responsiveNavbar() {
     let navBar = document.getElementById("navbar");
+    // let overlay = window.document.querySelectorAll('section');
 
-    if (navBar.style.display === "block" && ) {
+    if (navBar.style.display === "block") {
         navBar.style.display = "none";
     }
     else {
@@ -43,6 +44,10 @@ function responsiveNavbar() {
     }
 }
 
+window.addEventListener("click", (e) => {
+    responsiveNavbar(e.target);
+    console.log("object");
+});
 
 // const nav = document.querySelectorAll(".main-menu");
 //     console.log(nav);
