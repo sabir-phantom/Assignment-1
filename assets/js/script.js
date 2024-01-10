@@ -1,4 +1,4 @@
-
+// age calculation
 function age() {
     let age = parseInt(document.getElementById('age').value);
     let child = document.getElementById('child-card');
@@ -21,7 +21,7 @@ function age() {
     console.log("age: " + age);
 }
 
-
+// responsive navbar
 function Navbar() {
     if (window.matchMedia("(max-width: 768px)").matches) {
         document.getElementById("nav-bar").style.display = "none";
@@ -32,7 +32,28 @@ function Navbar() {
     }
 }
 
-function responsiveNavbar() {
+// navbar close
+// function responsiveNavbar() {
+//     let navBar = document.getElementById("navbar");
+//     // let overlay = window.document.querySelectorAll('section');
+
+//     if (navBar.style.display === "block") {
+//         navBar.style.display = "none";
+//     }
+//     else {
+//         navBar.style.display = "block";
+//     }
+//     console.log("close navbar");
+// }
+
+
+
+
+
+// window navbar close 
+let navBar = document.querySelector(".icon");
+
+navBar.addEventListener("click", () => {
     let navBar = document.getElementById("navbar");
     // let overlay = window.document.querySelectorAll('section');
 
@@ -42,11 +63,7 @@ function responsiveNavbar() {
     else {
         navBar.style.display = "block";
     }
-}
-
-window.addEventListener("click", (e) => {
-    responsiveNavbar(e.target);
-    console.log("object");
+    console.log("close navbar");
 });
 
 // const nav = document.querySelectorAll(".main-menu");
