@@ -22,29 +22,30 @@ function age() {
 }
 
 // responsive navbar
-function Navbar() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        document.getElementById("nav-bar").style.display = "none";
-        console.log("object");
-    }
-    else {
-        document.getElementById("nav-bar").style.display = "block";
-    }
-}
-
-// navbar close
-// function responsiveNavbar() {
-//     let navBar = document.getElementById("navbar");
-//     // let overlay = window.document.querySelectorAll('section');
-
-//     if (navBar.style.display === "block") {
-//         navBar.style.display = "none";
+// function Navbar() {
+//     if (window.matchMedia("(max-width: 768px)").matches) {
+//         document.getElementById("nav-bar").style.display = "none";
+//         console.log("object");
 //     }
 //     else {
-//         navBar.style.display = "block";
+//         document.getElementById("nav-bar").style.display = "block";
 //     }
-//     console.log("close navbar");
 // }
+
+// navbar close
+function responsiveNavbar() {
+    let navBar = document.getElementById("navbar");
+    // let overlay = window.document.querySelectorAll('section');
+
+    if (navBar.style.display === "block") {
+        navBar.style.display = "none";
+        console.log("closed navbar");
+    }
+    else {
+        navBar.style.display = "block";
+        console.log("opened navbar");
+    }
+}
 
 
 
@@ -52,19 +53,31 @@ function Navbar() {
 
 // window navbar close 
 let navBar = document.querySelector(".icon");
+let nav = document.getElementById("navbar");
 
-navBar.addEventListener("click", () => {
-    let navBar = document.getElementById("navbar");
-    // let overlay = window.document.querySelectorAll('section');
+// navBar.addEventListener("click", () => {
+//     // let overlay = window.document.querySelectorAll('section');
+//     if (nav.style.display === "block") {
+//         nav.style.display = "none";
+//         console.log("close navbar");
+//     }
+//     else {
+//         nav.style.display = "block";
+//         console.log("open navbar");
+//     }
+// });
 
-    if (navBar.style.display === "block") {
-        navBar.style.display = "none";
+navBar.addEventListener("click", responsiveNavbar);
+
+document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target)) {
+        responsiveNavbar();
     }
-    else {
-        navBar.style.display = "block";
-    }
-    console.log("close navbar");
+    console.log(event.target);
 });
+
+
+
 
 // const nav = document.querySelectorAll(".main-menu");
 //     console.log(nav);
